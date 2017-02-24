@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="col-md-12">
-   <div class="panel panel-info">
+   <div class="panel panel-primary">
         <div class="panel-heading">Penggajian</div>
         <div class="panel-body">
         <a class="btn btn-primary" href="{{url('penggajian/create')}}">Tambah Data</a><br><br>

@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
@@ -42,8 +42,14 @@
                             <label for="permision" class="col-md-4 control-label">permission</label>
 
                             <div class="col-md-6">
-                                <input id="permision" type="permision" class="form-control" name="permision" required>
-
+                                <div class="col-md-6">
+                                <select name="status" class="form-control">
+                                    <option value="">Pilih</option>
+                                    <option value="Belum Menikah">Admin</option>
+                                    <option value="Menikah">HRD </option>
+                                    <option value="Duda">Keuangan</option>
+                                    <option value="Janda">Karyawan</option>
+                                </select>
                                 @if ($errors->has('permision'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('permision') }}</strong>

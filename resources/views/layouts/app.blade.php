@@ -2,15 +2,7 @@
 <html lang="en">
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <br>
-    <br>
     <center><h1> SMK ASSALAAM BANDUNG</h1></center>
-    <!-- CSRF Token -->
-
-    <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
      <style type="text/css">
 nav {
@@ -78,6 +70,9 @@ li:hover a:after {
 
 body{
      background-color:#4169E1;
+     font-family:georgia;
+     font-style  : italic;
+  text-transform : capitalize;
   }
  .menu2 {
   width : 100%;
@@ -105,9 +100,9 @@ body{
 
 }
 h1{
-   font-family:georgia;
-   font-size: 50px;
-   font-color: white transparent transparent transparent;
+    color: white;
+    font-family: georgia;
+    font-size: 50px;
 }
 </style>
     <!-- Scripts -->
@@ -115,32 +110,21 @@ h1{
 }
 
 </head>
-<body>
-
-                    <!-- Left Side Of Navbar -->
-  <nav class="navbar navbar-i">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"></a>
-      </div>
        <div>
         <ul class="nav menu2">
         <li class=" menu2">
          <a href=""><center>APLIKASI PENGGAJIAN KARYAWAN</center></a></li>
         <li><a href="{{ url('/jabatan') }}">Jabatan</a></li>
-                          <li><a href="{{ url('/golongan') }}">Golongan</a></li>
-                          <li><a href="{{ url('/kategori') }}">Kategori Lembur</a></li>
-                          <li><a href="{{ url('/lembur') }}">Lembur Pegawai</a></li>
-                          <li><a href="{{ url('/pegawai') }}">Pegawai</a></li>
-                          <li><a href="{{ url('/tunjangan') }}">Tunjangan</a></li>
-                          <li><a href="{{ url('/tunjanganp') }}">Tunjangan Pegawai </a></li>
-                          <li><a href="{{ url('/penggajian') }}">Penggajian</a></li>
-                        &nbsp;
+                      <li><a href="{{ url('/golongan') }}">Golongan</a></li>
+                      <li><a href="{{ url('/kategori') }}">Kategori Lembur</a></li>
+                      <li><a href="{{ url('/lembur') }}">Lembur Pegawai</a></li>
+                      <li><a href="{{ url('/pegawai') }}">Pegawai</a></li>
+                      <li><a href="{{ url('/tunjangan') }}">Tunjangan</a></li>
+                      <li><a href="{{ url('/tunjanganp') }}">Tunjangan Pegawai </a></li>
+                      <li><a href="{{ url('/penggajian') }}">Penggajian</a></li>
+                        &nbsp; 
 
-
-
-
-
+                        
    <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())

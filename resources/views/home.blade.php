@@ -4,11 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
+         <font color="white" size="40px" st>
+                     <center><h>SELAMAT DATANG</h><br>
+                <h2> DI APLIKASI PENGGAJIAN KARYAWAN</font></h2></center>
                 </div>
             </div>
         </div>
