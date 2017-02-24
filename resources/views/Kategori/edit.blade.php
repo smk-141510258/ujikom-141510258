@@ -7,7 +7,7 @@
 	<div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-info">
+       <div class="panel panel-primary">
                 <div class="panel-heading">Edit Kategori Lembur</div>
                 <div class="panel-body">
 					{!! Form::model($kategori,['method'=>'PATCH','route'=>['kategori.update',$kategori->id]])!!}

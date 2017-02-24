@@ -1,19 +1,13 @@
 @extends('layouts.app')
 @section('content')
-
-<center><h2>Daftar Gaji</h2></center>
-<div class="container">
-  <div class="col-md-8 col-md-offset-2">
-    <div class="panel-heading">Rincian</div>
-    <div class="panel panel-info">           
+                    
     <div class="">
-        <div class="col-md-12">
-        </div>
-         <center> <a href="{{url('penggajian/create')}}" class="btn btn-info ">Tambah Data</a></center><hr>
-                        
-         <table class="table table-striped table-hover table-bordered">
-                        
-         <div class="col-md-12">
+         <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Penggajian</div>
+                <div class="panel-body">               
+              <table class="table table-striped table-hover table-bordered">
           <center>
 
                         <h3>{{$penggajian->TunjanganPegawai->Pegawai->User->name}}</h3>
@@ -32,9 +26,8 @@
                                 
                         </center>
                         </div> 
-                        </table>
-                        </div>
-                        </div>
+                        
+                    </table>
               
         
 @endsection

@@ -3,7 +3,7 @@
 @section('content')
 	
 <div class="container">
-	<div class="panel panel-info">
+	<div class="panel panel-primary">
 		<div class="panel-heading">Ubah Data Golongan</div>
 		<div class="panel-body">
 			<form method="POST" action="{{route('golongan.update', $golongan->id)}}">

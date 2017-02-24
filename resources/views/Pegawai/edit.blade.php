@@ -7,7 +7,7 @@
 	<div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-info">
+            <div class="panel panel-primary">
                 <div class="panel-heading">Edit Pegawai</div>
                 <div class="panel-body">
                     {!! Form::model($pegawai,['method'=>'PATCH','route'=>['pegawai.update',$pegawai->id],'enctype'=>'multipart/form-data']) !!}

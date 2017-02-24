@@ -7,13 +7,12 @@
 	<div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-info">
+            <div class="panel panel-primary">
                 <div class="panel-heading">Edit  Lembur</div>
                 <div class="panel-body">
 					{!! Form::model($kategori,['method'=>'PATCH','route'=>['lembur.update',$lembur->id]])!!}
 						{!! Form::hidden('id',null,['class'=>'form-control']) !!}
 
-               
                         <div class="form-group{{ $errors->has('kode_lembur_id') ? ' has-error' : '' }}">
                             <label for="kode_lembur_id" class="col-md-4 control-label">kode_lembur</label>
 

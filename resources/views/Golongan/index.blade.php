@@ -2,14 +2,15 @@
 
 @section('content')
 
+
 <div class="container">
-	<div class="panel panel-info">
+<div class="panel panel-primary">
 		<div class="panel-heading">Golongan</div>
 		<div class="panel-body">
-		
+			<center><a class="btn btn-success" href="{{url('golongan/create')}}">Tambah Data</a></center><hr><br>
 			  <table border="1" class="table table-striped table-border table-hover">
 				<thead>
-					<tr class="bg-info">
+					<tr class="bg-primary">
 						<th>No</th>
 						<th>Kode Golongan</th>
 						<th>Nama Golongan</th>
@@ -44,7 +45,7 @@
 				@endforeach
 
 			</table>
-			<a class="btn btn-info" href="{{url('golongan/create')}}">Tambah Data</a><br><br>
+		
 		</div>
 	</div>
 </div>

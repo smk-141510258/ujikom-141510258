@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 col-md-offset-2">
-            <div class="panel panel-info">
+          <div class="panel panel-primary">
                 <div class="panel-heading">Tambah Jabatan</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/jabatan') }}">

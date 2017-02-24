@@ -1,11 +1,9 @@
 @extends('layouts.app')
 @section('content')
-    {!! Form::open(['url' => 'golongan']) !!}
-
-
-
+    
+{!! Form::open(['url' => 'golongan']) !!}
     <div class="container">
-    <div class="panel panel-info">
+    <div class="panel panel-primary">
         <div class="panel-heading">Tambah Golongan</div>
         <div class="panel-body">
                     
@@ -51,6 +49,5 @@
               
     </div>
 </div>
-
 
 @stop

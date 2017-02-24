@@ -4,14 +4,13 @@
 @endsection
 @section('content')
 <div class="container">
-  <div class="col-md-8 col-md-offset-2">
-	<div class="panel panel-info">
+	<div class="panel panel-primary">
 		<div class="panel-heading">Lembur Pegawai</div>
 		<div class="panel-body">
-		<a class="btn btn-info" href="{{url('lembur/create')}}">Tambah Data</a><br><br>
+		<center><a class="btn btn-success" href="{{url('lembur/create')}}">Tambah Data</a></center><hr><br>
 			  <table border="1" class="table table-striped table-border table-hover">
 				<thead>
-				<tr class="bg-info">
+				<tr class="bg-primary">
 				<th>Lembur Ke-</th>
 				<th>Nama Pegawai</th>
 				<th>Kode Kategori Lembur</th>
@@ -28,7 +27,7 @@
 				<td>{{$data->KategoryLembur->kode_lembur}}</td>
 				<td>{{$data->jumlah_jam}}</td>
 				<td>
-					 btn-warning'> Edit </a>
+				<a href="{{route('lembur.edit',$data->id)}}" class='btn btn-warning'> Ubah </a>
 				</td>
 				<td>
 			    <form method="POST" action=" {{route('lembur.destroy', $data->id)}} ">

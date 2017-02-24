@@ -4,12 +4,12 @@
 @endsection
 @section('content')
    <div class="col-md-6 ">
-			            <div class="panel panel-info">
+			            <div class="panel panel-primary">
 			                <div class="panel-heading">Data User</div>
 			                <div class="panel-body">
 			                 <table border="1" class="table table-striped table-border table-hover">
 									<thead >
-										<tr class ="bg-info">
+										<tr class ="bg-primary">
 											<th>Name</th>
 											<th>Type User</th>
 											<th>Email</th>
@@ -31,12 +31,12 @@
 			        </div>
 
 			        <div class="col-md-6 col-md-offset-0">
-			            <div class="panel panel-info">
+			            <div class="panel panel-primary">
 			                <div class="panel-heading">Data Pegawai</div>
 			                <div class="panel-body">
-			                      <table  border="3" class="table table-striped table-bordered table-hover">
+			                      <table border="1" class="table table-striped table-border table-hover">
 									<thead >
-										<tr class ="bg-info">
+										<tr class ="bg-primary">
 											<th>No</th>
 											<th>NIP</th>
 											<th>Nama Golongan</th>
@@ -73,7 +73,7 @@
 									</tbody>
 
 								</table>
-									<a  href="{{url('pegawai/create')}}" class="btn btn-info">Tambah</a>
+									<a  href="{{url('pegawai/create')}}" class="btn btn-success">Tambah</a>
 			                </div>
 			            </div>
 			        </div>
